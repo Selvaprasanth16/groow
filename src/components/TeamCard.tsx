@@ -17,7 +17,7 @@ const TeamCard = ({ id, name, role, shortBio, large, skills, experience, instagr
     <div className="gradient-border glow-card group rounded-xl bg-card p-6 md:p-8">
       <div className={`mx-auto mb-5 flex items-center justify-center rounded-full gradient-bg ${large ? "h-28 w-28" : "h-20 w-20"}`}>
         <span className="font-heading text-2xl font-bold text-primary-foreground">
-          {name.split(" ")[0][0]}{name.split(" ").length > 1 ? name.split(" ")[1][0] : ""}
+          {name.split(" ")[0][0]}{name.split(" ").length > 1 ? name.split(" ")[1]?.[0] ?? "" : ""}
         </span>
       </div>
 

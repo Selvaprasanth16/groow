@@ -26,9 +26,9 @@ const Home = () => {
   return (
     <main className="pt-16">
       {/* HERO */}
-      <section className="relative overflow-hidden py-24 md:py-36">
+      <section className="relative overflow-hidden py-24 md:py-36" style={{ background: 'var(--gradient-hero)' }}>
         <div className="hero-glow bg-primary left-1/4 top-0" />
-        <div className="hero-glow bg-accent right-1/4 bottom-0" />
+        <div className="hero-glow bg-primary right-1/4 bottom-0" />
         <div className="container relative z-10 text-center">
           <h1 className="animate-fade-up font-heading text-4xl font-bold leading-tight md:text-6xl lg:text-7xl">
             We Build Scalable &<br />
@@ -164,7 +164,7 @@ const Home = () => {
       <SectionWrapper className="bg-muted/20">
         <div className="relative overflow-hidden rounded-2xl bg-card p-12 text-center md:p-20">
           <div className="hero-glow bg-primary left-0 top-0" />
-          <div className="hero-glow bg-accent right-0 bottom-0" />
+          <div className="hero-glow bg-primary right-0 bottom-0" />
           <div className="relative z-10">
             <h2 className="font-heading text-3xl font-bold md:text-5xl">
               Have a Project in <span className="gradient-text">Mind?</span>
