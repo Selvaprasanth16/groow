@@ -1,0 +1,126 @@
+export const teamMembers = [
+  {
+    id: "selvaprasanth",
+    name: "Selvaprasanth E",
+    role: "Full Stack Developer",
+    shortBio: "Building robust full-stack solutions with clean architecture and scalable deployments.",
+    bio: "Selvaprasanth is a Computer Science Engineer with real industry work experience building production-grade applications. He specializes in the MERN stack and has deep expertise in cloud infrastructure, containerization, and deployment pipelines. His focus is on writing clean, maintainable code that scales.",
+    skills: ["React", "Node.js", "Express", "MongoDB", "Flask", "AWS", "Docker", "TypeScript", "REST APIs", "PostgreSQL"],
+    experience: "Industry Work Experience",
+    background: "Computer Science Engineer",
+    timeline: [
+      { year: "2022", event: "Started learning full-stack development" },
+      { year: "2023", event: "Built first production application" },
+      { year: "2024", event: "Joined industry as Full Stack Developer" },
+      { year: "2025", event: "Co-founded Groow More Agency" },
+    ],
+    projects: ["E-Commerce Platform", "CRM Dashboard", "API Gateway System"],
+  },
+  {
+    id: "nivass",
+    name: "Nivass E",
+    role: "Full Stack Developer",
+    shortBio: "Crafting powerful backend systems and API architectures for modern applications.",
+    bio: "Nivass is a seasoned Full Stack Developer with strong industry experience. He excels in building complex backend systems, designing API architectures, and managing cloud deployments. His expertise spans the entire MERN stack with a particular focus on system design and scalability.",
+    skills: ["React", "Node.js", "Express", "MongoDB", "API Architecture", "Cloud Deployment", "System Design", "Redis", "GraphQL"],
+    experience: "Industry Work Experience",
+    timeline: [
+      { year: "2022", event: "Began full-stack development journey" },
+      { year: "2023", event: "Specialized in backend architecture" },
+      { year: "2024", event: "Joined industry as Backend Developer" },
+      { year: "2025", event: "Co-founded Groow More Agency" },
+    ],
+    projects: ["Real-time Chat System", "Payment Gateway Integration", "Cloud Infrastructure Setup"],
+  },
+  {
+    id: "sandeep",
+    name: "Sandeep H",
+    role: "Certified MERN Developer",
+    shortBio: "Certified developer with 20K+ followers, blending design mastery with technical expertise.",
+    bio: "Sandeep is a certified MERN Stack Developer (certified by Error Makes Clever) who combines strong technical skills with an eye for design and branding. He manages a tech Instagram page with over 20,000 followers, sharing knowledge and building community. His strength lies in UI/UX design and creating visually stunning, functional interfaces.",
+    skills: ["React", "Node.js", "MongoDB", "UI/UX Design", "Branding", "Figma", "Tailwind CSS", "Content Creation", "Social Media"],
+    experience: "Certified MERN Developer",
+    certifications: ["MERN Stack – Error Makes Clever"],
+    instagramFollowers: "20K+",
+    timeline: [
+      { year: "2022", event: "Started learning web development" },
+      { year: "2023", event: "Got MERN Stack certified" },
+      { year: "2024", event: "Grew tech Instagram to 20K+ followers" },
+      { year: "2025", event: "Co-founded Groow More Agency" },
+    ],
+    projects: ["Brand Identity Systems", "Social Media Dashboard", "Portfolio Websites"],
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    title: "E-Commerce Platform",
+    description: "A full-featured e-commerce application with payment integration, inventory management, and real-time analytics dashboard.",
+    techStack: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
+    category: "Web Application",
+  },
+  {
+    id: 2,
+    title: "CRM Dashboard",
+    description: "Enterprise-level customer relationship management system with automated workflows and reporting.",
+    techStack: ["React", "Express", "PostgreSQL", "Redis", "Docker"],
+    category: "Enterprise",
+  },
+  {
+    id: 3,
+    title: "Real-time Chat Application",
+    description: "Scalable messaging platform with real-time communication, file sharing, and end-to-end encryption.",
+    techStack: ["React", "Socket.io", "Node.js", "MongoDB"],
+    category: "Real-time App",
+  },
+  {
+    id: 4,
+    title: "Cloud Infrastructure Setup",
+    description: "Complete CI/CD pipeline and cloud infrastructure for a SaaS product serving thousands of users.",
+    techStack: ["AWS", "Docker", "GitHub Actions", "Nginx"],
+    category: "DevOps",
+  },
+  {
+    id: 5,
+    title: "Portfolio & Branding Website",
+    description: "Premium portfolio websites with custom animations, SEO optimization, and performance tuning.",
+    techStack: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
+    category: "Design",
+  },
+  {
+    id: 6,
+    title: "API Gateway System",
+    description: "Centralized API gateway with rate limiting, authentication, logging, and microservice routing.",
+    techStack: ["Node.js", "Express", "Redis", "JWT", "Docker"],
+    category: "Backend",
+  },
+];
+
+export const services = [
+  {
+    title: "Web Application Development",
+    description: "Custom web apps built with modern frameworks, optimized for performance and scalability.",
+    icon: "globe",
+  },
+  {
+    title: "Backend API Development",
+    description: "Robust RESTful and GraphQL APIs with secure authentication and efficient data handling.",
+    icon: "server",
+  },
+  {
+    title: "UI/UX Development",
+    description: "Beautiful, intuitive interfaces that deliver exceptional user experiences across all devices.",
+    icon: "palette",
+  },
+  {
+    title: "Cloud Deployment & DevOps",
+    description: "Automated CI/CD pipelines, containerized deployments, and cloud infrastructure management.",
+    icon: "cloud",
+  },
+  {
+    title: "Maintenance & Scaling",
+    description: "Ongoing support, performance optimization, and scaling solutions for growing applications.",
+    icon: "settings",
+  },
+];
