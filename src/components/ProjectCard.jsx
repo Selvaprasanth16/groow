@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
-const ProjectCard = ({ title, description, techStack, category }) => {
+const ProjectCard = ({ title, description, techStack, category, id }) => {
   return (
     <div className="gradient-border glow-card group rounded-xl bg-card p-6">
       <div className="mb-4 flex items-start justify-between">
@@ -20,9 +21,12 @@ const ProjectCard = ({ title, description, techStack, category }) => {
         ))}
       </div>
 
-      <button className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-all group-hover:gap-2.5">
+      <Link 
+        to={`/projects/${id}`}
+        className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-primary transition-all group-hover:gap-2.5"
+      >
         View Details <ArrowRight size={14} />
-      </button>
+      </Link>
     </div>
   );
 };

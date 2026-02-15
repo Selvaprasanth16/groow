@@ -59,6 +59,8 @@ export const projects = [
     description: "A full-featured e-commerce application with payment integration, inventory management, and real-time analytics dashboard.",
     techStack: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
     category: "Web Application",
+    githubUrl: "https://github.com/groow-more/ecommerce-platform",
+    liveUrl: "https://ecommerce-demo.groowmore.com",
   },
   {
     id: 2,
@@ -66,6 +68,8 @@ export const projects = [
     description: "Enterprise-level customer relationship management system with automated workflows and reporting.",
     techStack: ["React", "Express", "PostgreSQL", "Redis", "Docker"],
     category: "Enterprise",
+    githubUrl: "https://github.com/groow-more/crm-dashboard",
+    liveUrl: "https://crm-demo.groowmore.com",
   },
   {
     id: 3,
@@ -73,6 +77,8 @@ export const projects = [
     description: "Scalable messaging platform with real-time communication, file sharing, and end-to-end encryption.",
     techStack: ["React", "Socket.io", "Node.js", "MongoDB"],
     category: "Real-time App",
+    githubUrl: "https://github.com/groow-more/realtime-chat",
+    liveUrl: "https://chat-demo.groowmore.com",
   },
   {
     id: 4,
@@ -80,6 +86,8 @@ export const projects = [
     description: "Complete CI/CD pipeline and cloud infrastructure for a SaaS product serving thousands of users.",
     techStack: ["AWS", "Docker", "GitHub Actions", "Nginx"],
     category: "DevOps",
+    githubUrl: "https://github.com/groow-more/cloud-infrastructure",
+    liveUrl: "https://infra-docs.groowmore.com",
   },
   {
     id: 5,
@@ -87,6 +95,8 @@ export const projects = [
     description: "Premium portfolio websites with custom animations, SEO optimization, and performance tuning.",
     techStack: ["React", "Tailwind CSS", "Framer Motion", "Vercel"],
     category: "Design",
+    githubUrl: "https://github.com/groow-more/portfolio-template",
+    liveUrl: "https://portfolio-demo.groowmore.com",
   },
   {
     id: 6,
@@ -94,6 +104,8 @@ export const projects = [
     description: "Centralized API gateway with rate limiting, authentication, logging, and microservice routing.",
     techStack: ["Node.js", "Express", "Redis", "JWT", "Docker"],
     category: "Backend",
+    githubUrl: "https://github.com/groow-more/api-gateway",
+    liveUrl: "https://api-docs.groowmore.com",
   },
 ];
 

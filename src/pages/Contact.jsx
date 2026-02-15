@@ -41,7 +41,7 @@ const Contact = () => {
         <div className="mt-14 grid gap-10 lg:grid-cols-2">
           {/* Contact Info */}
           <div className="space-y-6">
-            <div className="rounded-xl bg-card p-6 border border-border">
+            {/* <div className="rounded-xl bg-card p-6 border border-border">
               <div className="flex items-start gap-4">
                 <div className="rounded-lg bg-primary/10 p-3 text-primary">
                   <Mail size={24} />
@@ -51,9 +51,9 @@ const Contact = () => {
                   <p className="mt-1 text-muted-foreground">hello@groowmore.dev</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="rounded-xl bg-card p-6 border border-border">
+            {/* <div className="rounded-xl bg-card p-6 border border-border">
               <div className="flex items-start gap-4">
                 <div className="rounded-lg bg-primary/10 p-3 text-primary">
                   <Phone size={24} />
@@ -63,9 +63,9 @@ const Contact = () => {
                   <p className="mt-1 text-muted-foreground">+91 (Available on request)</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="rounded-xl bg-card p-6 border border-border">
+            {/* <div className="rounded-xl bg-card p-6 border border-border">
               <div className="flex items-start gap-4">
                 <div className="rounded-lg bg-primary/10 p-3 text-primary">
                   <MapPin size={24} />
@@ -75,7 +75,7 @@ const Contact = () => {
                   <p className="mt-1 text-muted-foreground">India</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
 
           {/* Contact Form */}

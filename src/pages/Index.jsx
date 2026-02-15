@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ArrowRight, Globe, Server, Palette, Cloud, Settings, CheckCircle } from "lucide-react";
+import { useEffect } from "react";
 import SectionWrapper from "../components/SectionWrapper";
 import StatCounter from "../components/StatCounter";
 import TeamCard from "../components/TeamCard";
 import ProjectCard from "../components/ProjectCard";
+import ContactSection from "../components/ContactSection";
 import { teamMembers, projects, services } from "../data/siteData";
 
 const iconMap = {
@@ -23,10 +25,25 @@ const whyUs = [
 ];
 
 const Home = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const sectionId = location.state?.scrollTo;
+    if (!sectionId) return;
+
+    const el = document.getElementById(sectionId);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+
+    navigate("/", { replace: true, state: null });
+  }, [location.state, navigate]);
+
   return (
     <main className="pt-16">
       {/* HERO */}
-      <section className="relative overflow-hidden py-24 md:py-36" style={{ background: 'var(--gradient-hero)' }}>
+      <section id="home" className="relative overflow-hidden py-24 md:py-36 scroll-mt-20" style={{ background: 'var(--gradient-hero)' }}>
         <div className="hero-glow bg-primary left-1/4 top-0" />
         <div className="hero-glow bg-primary right-1/4 bottom-0" />
         <div className="container relative z-10 text-center">
@@ -38,18 +55,20 @@ const Home = () => {
             From Idea to Deployment — We Deliver Complete Full Stack Solutions
           </p>
           <div className="animate-fade-up-delay-2 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link
-              to="/projects"
+            <button
+              type="button"
+              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth", block: "start" })}
               className="gradient-bg inline-flex items-center gap-2 rounded-lg px-7 py-3 font-semibold text-primary-foreground transition-transform hover:scale-105"
             >
               View Our Work <ArrowRight size={16} />
-            </Link>
-            <Link
-              to="/contact"
+            </button>
+            <button
+              type="button"
+              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" })}
               className="inline-flex items-center gap-2 rounded-lg border border-border px-7 py-3 font-semibold text-foreground transition-colors hover:bg-muted"
             >
               Start a Project
-            </Link>
+            </button>
           </div>
         </div>
       </section>
@@ -106,7 +125,7 @@ const Home = () => {
       </SectionWrapper>
 
       {/* TEAM PREVIEW */}
-      <SectionWrapper>
+      <SectionWrapper id="team" className="scroll-mt-20">
         <h2 className="text-center font-heading text-3xl font-bold md:text-4xl">
           Meet the <span className="gradient-text">Team</span>
         </h2>
@@ -124,7 +143,7 @@ const Home = () => {
       </SectionWrapper>
 
       {/* PROJECTS */}
-      <SectionWrapper className="bg-muted/20">
+      <SectionWrapper id="projects" className="bg-muted/20 scroll-mt-20">
         <h2 className="text-center font-heading text-3xl font-bold md:text-4xl">
           Project <span className="gradient-text">Showcase</span>
         </h2>
@@ -161,25 +180,8 @@ const Home = () => {
       </SectionWrapper>
 
       {/* FINAL CTA */}
-      <SectionWrapper className="bg-muted/20">
-        <div className="relative overflow-hidden rounded-2xl bg-card p-12 text-center md:p-20">
-          <div className="hero-glow bg-primary left-0 top-0" />
-          <div className="hero-glow bg-primary right-0 bottom-0" />
-          <div className="relative z-10">
-            <h2 className="font-heading text-3xl font-bold md:text-5xl">
-              Have a Project in <span className="gradient-text">Mind?</span>
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              Let's turn your idea into a scalable digital product.
-            </p>
-            <Link
-              to="/contact"
-              className="gradient-bg mt-8 inline-flex items-center gap-2 rounded-lg px-8 py-3.5 font-semibold text-primary-foreground transition-transform hover:scale-105"
-            >
-              Let's Build Together <ArrowRight size={16} />
-            </Link>
-          </div>
-        </div>
+      <SectionWrapper id="contact" className="bg-muted/20 scroll-mt-20">
+        <ContactSection />
       </SectionWrapper>
     </main>
   );

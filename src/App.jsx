@@ -9,7 +9,7 @@ import Index from "./pages/Index";
 import Team from "./pages/Team";
 import MemberDetail from "./pages/MemberDetail";
 import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
+import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,16 +20,20 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/team/:memberId" element={<MemberDetail />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <Footer />
+        <div className="min-h-screen flex flex-col">
+          <Navbar />
+          <main className="flex-1">
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/team/:memberId" element={<MemberDetail />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/projects/:projectId" element={<ProjectDetail />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

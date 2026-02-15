@@ -38,18 +38,20 @@ const Home = () => {
             From Idea to Deployment — We Deliver Complete Full Stack Solutions
           </p>
           <div className="animate-fade-up-delay-2 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Link
-              to="/projects"
+            <button
+              type="button"
+              onClick={() => document.getElementById("projects")?.scrollIntoView({ behavior: "smooth", block: "start" })}
               className="gradient-bg inline-flex items-center gap-2 rounded-lg px-7 py-3 font-semibold text-primary-foreground transition-transform hover:scale-105"
             >
               View Our Work <ArrowRight size={16} />
-            </Link>
-            <Link
-              to="/contact"
+            </button>
+            <button
+              type="button"
+              onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" })}
               className="inline-flex items-center gap-2 rounded-lg border border-border px-7 py-3 font-semibold text-foreground transition-colors hover:bg-muted"
             >
               Start a Project
-            </Link>
+            </button>
           </div>
         </div>
       </section>

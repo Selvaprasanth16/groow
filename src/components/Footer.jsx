@@ -36,7 +36,7 @@ const Footer = () => {
               <Link to="/" className="text-sm text-muted-foreground hover:text-primary transition-colors">Home</Link>
               <Link to="/team" className="text-sm text-muted-foreground hover:text-primary transition-colors">Team</Link>
               <Link to="/projects" className="text-sm text-muted-foreground hover:text-primary transition-colors">Projects</Link>
-              <Link to="/contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</Link>
+              <Link to="/" state={{ scrollTo: "contact" }} className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</Link>
             </div>
           </div>
 
